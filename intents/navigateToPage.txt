@@ -1,0 +1,6 @@
+show me the [page:page](transcription) page
+take me to [page:page](patient information)
+open the [page:page](patient selection) page
+i want to go to [page:page](patient documents) page
+switch to [page:page](file selection)
+

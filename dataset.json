@@ -1,0 +1,987 @@
+{
+  "language": "en",
+  "intents": {
+    "beginSession": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "start a "
+            },
+            {
+              "slot_name": "session",
+              "entity": "session",
+              "text": "session"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "slot_name": "firstName",
+              "entity": "patient",
+              "text": "Ian"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "I want to start a new "
+            },
+            {
+              "slot_name": "session",
+              "entity": "session",
+              "text": "visit"
+            },
+            {
+              "text": " with "
+            },
+            {
+              "slot_name": "firstName",
+              "entity": "patient",
+              "text": "nick"
+            },
+            {
+              "slot_name": "lastName",
+              "entity": "patient",
+              "text": "gregory"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "start recording a new "
+            },
+            {
+              "slot_name": "session",
+              "entity": "session",
+              "text": "transcript"
+            },
+            {
+              "text": " for "
+            },
+            {
+              "slot_name": "firstName",
+              "entity": "patient",
+              "text": "josh"
+            },
+            {
+              "slot_name": "lastName",
+              "entity": "patient",
+              "text": "hoffing"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "make a new "
+            },
+            {
+              "slot_name": "session",
+              "entity": "session",
+              "text": "continuing care document"
+            },
+            {
+              "text": " for "
+            },
+            {
+              "slot_name": "firstName",
+              "entity": "patient",
+              "text": "brendan"
+            },
+            {
+              "slot_name": "lastName",
+              "entity": "patient",
+              "text": "dolan-gavitt"
+            }
+          ]
+        }
+      ]
+    },
+    "endSession": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "end the current session"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "end the visit"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "stop recording"
+            }
+          ]
+        }
+      ]
+    },
+    "navigateToPage": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "show me the "
+            },
+            {
+              "slot_name": "page",
+              "entity": "page",
+              "text": "transcription"
+            },
+            {
+              "text": " page"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take me to "
+            },
+            {
+              "slot_name": "page",
+              "entity": "page",
+              "text": "patient information"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "open the "
+            },
+            {
+              "slot_name": "page",
+              "entity": "page",
+              "text": "patient selection"
+            },
+            {
+              "text": " page"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "i want to go to "
+            },
+            {
+              "slot_name": "page",
+              "entity": "page",
+              "text": "patient documents"
+            },
+            {
+              "text": " page"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "switch to "
+            },
+            {
+              "slot_name": "page",
+              "entity": "page",
+              "text": "file selection"
+            }
+          ]
+        }
+      ]
+    },
+    "readInformation": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "read me the patient's "
+            },
+            {
+              "slot_name": "all",
+              "entity": "vitalInformation",
+              "text": "vitals"
+            },
+            {
+              "text": " information"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "tell me what the patient's "
+            },
+            {
+              "slot_name": "all",
+              "entity": "generalInformation",
+              "text": "general information"
+            },
+            {
+              "text": " was at their last visit"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "will you read off "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "vitalInformation",
+              "text": "blood pressure"
+            },
+            {
+              "text": " from the patient's chart"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "can you read the "
+            },
+            {
+              "slot_name": "all",
+              "entity": "generalInformation",
+              "text": "general information"
+            },
+            {
+              "text": " for the patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "tell me the "
+            },
+            {
+              "slot_name": "measure",
+              "entity": "informationType",
+              "text": "severity"
+            },
+            {
+              "text": " of their "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "allergyInformation",
+              "text": "hives"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "list all the "
+            },
+            {
+              "slot_name": "all",
+              "entity": "allergyInformation",
+              "text": "allergies"
+            },
+            {
+              "text": " the patient has"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what are the patient's "
+            },
+            {
+              "slot_name": "all",
+              "entity": "allergyInformation",
+              "text": "allergies"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "read me the patient's "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "vitalInformation",
+              "text": "blood pressure"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "read me the patient's "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "vitalInformation",
+              "text": "pulse"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "read me the patient's "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "first name"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "read me the patient's "
+            },
+            {
+              "slot_name": "measure",
+              "entity": "informationType",
+              "text": "age"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "list all the "
+            },
+            {
+              "slot_name": "unit",
+              "entity": "informationType",
+              "text": "severities"
+            },
+            {
+              "text": " or the patient's "
+            },
+            {
+              "slot_name": "all",
+              "entity": "allergyInformation",
+              "text": "allergies"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what are the all the "
+            },
+            {
+              "slot_name": "all",
+              "entity": "medicalProblemInformation",
+              "text": "diagnoses"
+            },
+            {
+              "text": " the patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what are the patients "
+            },
+            {
+              "slot_name": "all",
+              "entity": "medicalProblemInformation",
+              "text": "past diagnoses"
+            },
+            {
+              "text": " with in the last few "
+            },
+            {
+              "slot_name": "filter",
+              "entity": "filter",
+              "text": "months"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get the "
+            },
+            {
+              "slot_name": "filter",
+              "entity": "filter",
+              "text": "most recent"
+            },
+            {
+              "slot_name": "all",
+              "entity": "medicalProblemInformation",
+              "text": "diagnoses"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "what was the "
+            },
+            {
+              "slot_name": "filter",
+              "entity": "filter",
+              "text": "oldest"
+            },
+            {
+              "slot_name": "all",
+              "entity": "medicalProblemInformation",
+              "text": "past diagnoses"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "say me the "
+            },
+            {
+              "slot_name": "measure",
+              "entity": "informationType",
+              "text": "age"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "tell me the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "email"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "say me the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "date of birth"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "tell me the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "d.o.b"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "tell me the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "race"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "read the "
+            },
+            {
+              "slot_name": "measure",
+              "entity": "informationType",
+              "text": "age"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "email"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "read me the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "date of birth"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get me the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "d.o.b"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "say the "
+            },
+            {
+              "slot_name": "identifier",
+              "entity": "informationType",
+              "text": "race"
+            },
+            {
+              "text": " of the "
+            },
+            {
+              "slot_name": "specific",
+              "entity": "patientDemographicInformation",
+              "text": "patient"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "entities": {
+    "generalInformation": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "general information",
+          "synonyms": [
+            "general",
+            "admin information",
+            "patient admin",
+            "administrative informtion",
+            "patient administration information",
+            "demographics",
+            "demographics information"
+          ]
+        },
+        {
+          "value": "general information",
+          "synonyms": []
+        },
+        {
+          "value": "general information",
+          "synonyms": []
+        }
+      ]
+    },
+    "informationType": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "severity",
+          "synonyms": [
+            "severities",
+            "age",
+            "email",
+            "date of birth",
+            "d.o.b",
+            "race",
+            "units",
+            "value",
+            "dose",
+            "time administered",
+            "date given",
+            "date administered"
+          ]
+        },
+        {
+          "value": "first name",
+          "synonyms": []
+        },
+        {
+          "value": "email",
+          "synonyms": []
+        },
+        {
+          "value": "date of birth",
+          "synonyms": []
+        },
+        {
+          "value": "d.o.b",
+          "synonyms": []
+        },
+        {
+          "value": "race",
+          "synonyms": []
+        },
+        {
+          "value": "email",
+          "synonyms": []
+        },
+        {
+          "value": "date of birth",
+          "synonyms": []
+        },
+        {
+          "value": "d.o.b",
+          "synonyms": []
+        },
+        {
+          "value": "race",
+          "synonyms": []
+        },
+        {
+          "value": "severity",
+          "synonyms": []
+        },
+        {
+          "value": "age",
+          "synonyms": []
+        },
+        {
+          "value": "age",
+          "synonyms": []
+        },
+        {
+          "value": "age",
+          "synonyms": []
+        },
+        {
+          "value": "severities",
+          "synonyms": []
+        }
+      ]
+    },
+    "medicalProblemInformation": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "diagnoses",
+          "synonyms": [
+            "past diagnoses",
+            "category",
+            "start date",
+            "end date",
+            "name"
+          ]
+        },
+        {
+          "value": "diagnoses",
+          "synonyms": []
+        },
+        {
+          "value": "past diagnoses",
+          "synonyms": []
+        },
+        {
+          "value": "diagnoses",
+          "synonyms": []
+        },
+        {
+          "value": "past diagnoses",
+          "synonyms": []
+        }
+      ]
+    },
+    "page": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "options",
+          "synonyms": [
+            "file explorer",
+            "patient selection",
+            "patient documents",
+            "patient dialogue",
+            "patient session"
+          ]
+        },
+        {
+          "value": "transcription",
+          "synonyms": []
+        },
+        {
+          "value": "patient information",
+          "synonyms": []
+        },
+        {
+          "value": "patient selection",
+          "synonyms": []
+        },
+        {
+          "value": "patient documents",
+          "synonyms": []
+        },
+        {
+          "value": "file selection",
+          "synonyms": []
+        }
+      ]
+    },
+    "patient": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "ian butler",
+          "synonyms": [
+            "nick gregory",
+            "brendan dolan-gavitt",
+            "josh hoffing",
+            "cory dickson",
+            "alanna kennard",
+            "marianna duquense",
+            "nicole depalma"
+          ]
+        },
+        {
+          "value": "Ian",
+          "synonyms": []
+        },
+        {
+          "value": "nick",
+          "synonyms": []
+        },
+        {
+          "value": "josh",
+          "synonyms": []
+        },
+        {
+          "value": "brendan",
+          "synonyms": []
+        },
+        {
+          "value": "gregory",
+          "synonyms": []
+        },
+        {
+          "value": "hoffing",
+          "synonyms": []
+        },
+        {
+          "value": "dolan-gavitt",
+          "synonyms": []
+        }
+      ]
+    },
+    "patientDemographicInformation": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "chart",
+          "synonyms": [
+            "patient",
+            "continuing care document",
+            "demographics",
+            "personal information"
+          ]
+        }
+      ]
+    },
+    "session": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "visit",
+          "synonyms": [
+            "session",
+            "transcript",
+            "transcription",
+            "continuing care document"
+          ]
+        },
+        {
+          "value": "visit",
+          "synonyms": []
+        },
+        {
+          "value": "transcript",
+          "synonyms": []
+        },
+        {
+          "value": "continuing care document",
+          "synonyms": []
+        }
+      ]
+    },
+    "vitalInformation": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "vitals",
+          "synonyms": [
+            "blood pressure",
+            "pulse",
+            "body temperature",
+            "respiration",
+            "respiration rate",
+            "bp",
+            "temp"
+          ]
+        },
+        {
+          "value": "vitals",
+          "synonyms": []
+        },
+        {
+          "value": "blood pressure",
+          "synonyms": []
+        },
+        {
+          "value": "blood pressure",
+          "synonyms": []
+        },
+        {
+          "value": "pulse",
+          "synonyms": []
+        }
+      ]
+    },
+    "allergyInformation": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "allergies",
+          "synonyms": []
+        },
+        {
+          "value": "allergies",
+          "synonyms": []
+        },
+        {
+          "value": "allergies",
+          "synonyms": []
+        },
+        {
+          "value": "hives",
+          "synonyms": []
+        }
+      ]
+    },
+    "filter": {
+      "automatically_extensible": true,
+      "use_synonyms": true,
+      "data": [
+        {
+          "value": "months",
+          "synonyms": []
+        },
+        {
+          "value": "most recent",
+          "synonyms": []
+        },
+        {
+          "value": "oldest",
+          "synonyms": []
+        }
+      ]
+    }
+  }
+}

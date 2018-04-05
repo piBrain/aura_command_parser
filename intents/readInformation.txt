@@ -1,0 +1,26 @@
+read me the patient's [all:vitalInformation](vitals) information
+tell me what the patient's [all:generalInformation](general information) was at their last visit
+will you read off [specific:vitalInformation](blood pressure) from the patient's chart
+can you read the [all:generalInformation](general information) for the patient
+tell me the [measure:informationType](severity) of their [specific:allergyInformation](hives)
+list all the [all:allergyInformation](allergies) the patient has
+what are the patient's [all:allergyInformation](allergies)
+read me the patient's [specific:vitalInformation](blood pressure)
+read me the patient's [specific:vitalInformation](pulse)
+read me the patient's [identifier:informationType](first name)
+read me the patient's [measure:informationType](age)
+list all the [unit:informationType](severities) or the patient's [all:allergyInformation](allergies)
+what are the all the [all:medicalProblemInformation](diagnoses) the patient
+what are the patients [all:medicalProblemInformation](past diagnoses) with in the last few [filter:filter](months)
+get the [filter:filter](most recent) [all:medicalProblemInformation](diagnoses)
+what was the [filter:filter](oldest) [all:medicalProblemInformation](past diagnoses)
+say me the [measure:informationType](age) of the [specific:patientDemographicInformation](patient)
+tell me the [identifier:informationType](email) of the [specific:patientDemographicInformation](patient)
+say me the [identifier:informationType](date of birth) of the [specific:patientDemographicInformation](patient)
+tell me the [identifier:informationType](d.o.b) of the [specific:patientDemographicInformation](patient)
+tell me the [identifier:informationType](race) of the [specific:patientDemographicInformation](patient)
+read the [measure:informationType](age) of the [specific:patientDemographicInformation](patient)
+get the [identifier:informationType](email) of the [specific:patientDemographicInformation](patient)
+read me the [identifier:informationType](date of birth) of the [specific:patientDemographicInformation](patient)
+get me the [identifier:informationType](d.o.b) of the [specific:patientDemographicInformation](patient)
+say the [identifier:informationType](race) of the [specific:patientDemographicInformation](patient)
