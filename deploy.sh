@@ -6,5 +6,8 @@ cp ./trained_engine.json ./deploy
 cp ./config_en.json ./deploy
 cp ./lambda_function.py ./deploy
 cp -r $1/* ./deploy
-zip -r command_parsing.zip deploy/*
+pushd ./deploy
+zip -r command_parsing.zip ./*
+popd
+cp ./deploy/command_parsing.zip .
 aws s3 cp command_parsing.zip s3://microservice.files
